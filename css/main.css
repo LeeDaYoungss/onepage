@@ -240,48 +240,6 @@ main section > h2{
   transform:translateY(62px);
 }
 
-/* 캐스퍼 구매안내 */
-#buy {text-align: center;}
-#buy h3 {
-  font-size: 24px;
-  padding:60px 0px;
-  font-weight: 500;
-}
-.t_color {
-  color:var(--t-color03);
-}
-#buy ul {
-  width: 1000px;
-  margin:0 auto;
-}
-#buy ul::after {
-  clear:both;
-  display: block;
-  content:"";
-}
-#buy ul li {
-  float: left;
-  width: 33.333%;
-  margin-bottom:60px;
-}
-#buy ul li h4 {
-  font-size: var(--t-size16);
-  font-weight: bold;
-}
-#buy ul li img {
-  width: 70px;
-  padding:15px 0px;
-}
-#buy ul li .p03 {
-  line-height: 20px;
-}
-
-#buy iframe {
-  width: 996px;
-  height: 560px;
-  border: none;
-}
-
 /* 이벤트 배너 */
 #event{
   background:#ececec;
@@ -313,3 +271,189 @@ main section > h2{
   display:inline-block;
 }
 .act01{background:#333 !important;}
+
+/* 캐스퍼 구매안내 */
+#buy{
+  text-align:center;
+}
+#buy h3{
+  font-size:24px;
+  padding:60px 0px;
+  font-weight:500;
+}
+.t_color{
+  color:var(--t-color03);
+}
+
+#buy ul{
+  width:1000px;
+  margin:0px auto;
+}
+.clearfix::after{
+  clear:both;
+  display:block;
+  content:"";
+}
+#buy ul li{
+  float:left;
+  width:33.3333%;
+  margin-bottom:60px;
+}
+#buy ul li h4{
+  font-size:var(--t-size16);
+  font-weight:bold;
+}
+#buy ul li img{
+  width:70px;
+  padding:15px 0px;
+}
+#buy ul li .p03{
+  line-height:20px;
+}
+
+#buy iframe{
+  width:1000px;height:560px;
+  border:none;
+}
+
+/* 고객지원 서식 */
+#cs{
+  width:100%;
+  background:#ececec;
+  padding:60px;
+}
+#cs > h2{margin-bottom:40px;}
+#cs article{
+  width:1200px;
+  margin:0px auto 40px auto;
+  background:var(--bg-color01);
+}
+#cs article h3{
+  font-size:var(--t-size18);
+  text-align:center;
+  padding:60px 0px 20px 0px;
+  font-weight: 500;
+}
+#cs article div{
+  width:50%;
+  float:left;
+  display:flex;
+  justify-content:center;
+  padding:50px 0px;
+}
+.cs_p{
+  width: 175px;
+  text-align: center;
+}
+.cs_p strong{
+  font-weight:500;
+  font-size:var(--t-size16);
+}
+.cs_p a{
+  color:var(--t-color03);
+  line-height:30px;
+}
+.cs_p a::after{
+  content:' >';
+  color:var(--t-color03);
+}
+
+/* 스프라이트 이미지 삽입 */
+.car, .member {
+  width: 62px;
+  height: 40px;
+  display:inline-block;
+  background-image: url(../images/ico-main-guide.72b7c3f.png);
+  text-indent: -9999px;
+  background-size:300px;
+}
+.car {
+  background-position: 126px 3px;
+  position:relative;
+  top:25px;
+}
+.member {
+  width: 64px;
+  background-position: -236px 5px; 
+}
+
+#cs dl {
+  padding-left: 20px;
+  line-height:22px;
+}
+#cs dt {
+  font-weight: bold;
+}
+#cs dd {
+  color: #d6d6d6;
+}
+
+.cs_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+.cs_list li {
+  position:relative;
+  width:290px;
+  height:320px;
+  background:var(--bg-color01);
+  margin:0px 5px 50px 0px;
+  padding:20px 40px;
+  box-sizing: border-box;
+}
+.cs_list li:last-child {
+  margin:0;
+}
+.cs_list p {
+}
+.cs_list strong {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 70px;
+  color:var(--t-color01);
+}
+.cs_list li p span:first-of-type {
+  font-size: var(--t-size14);
+  font-weight: 500;
+
+  color:var(--t-color01);
+}
+.cs_list span {
+  display: block;
+  font-size: var(--t-size14);
+  line-height: 23px;
+  color:#999;
+}
+.csbtn {
+  display: inline-block;
+  width:150px;
+  height:20px;
+  position:absolute;
+  left:50%;
+  transform: translate(-50%);
+  bottom:40px;
+  text-align: center;
+  line-height: 20px;
+  padding:10px 10px;
+  background:var(--bg-color02);
+  color:#fff;
+  font-size: var(--t-size14);
+}
+.csafter {
+  color:var(--t-color03);
+  line-height:30px;
+  font-size: var(--t-size14);
+  font-weight: 500;
+}
+.csafter::after {
+  content:' >';
+  color:var(--t-color03);
+}
+
+.bbanner {text-align: center;}
+#b_banner {
+  width:1200px;
+}
